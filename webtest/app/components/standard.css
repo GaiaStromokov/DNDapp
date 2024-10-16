@@ -1,0 +1,71 @@
+body {
+    font-family: "Garamond", serif;
+    color: #3a2a1b;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%; /* Make the table take the full height of the box */
+}
+
+th,td {
+    border: 1px solid #3a2a1b;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type="text"]{
+    width: 98%;
+    padding: 3px;
+    border: 1px solid #3a2a1b;
+    border-radius: 4px;
+    background-color: #f9f0dc;
+    color: #3a2a1b;
+}
+
+input[type="number"]{
+    width: 30px;
+    padding: 3px;
+    border: 1px solid #3a2a1b;
+    border-radius: 4px;
+    background-color: #f9f0dc;
+    color: #3a2a1b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+select {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #3a2a1b;
+    border-radius: 4px;
+    background-color: #f9f0dc;
+    color: #3a2a1b;
+    
+}
+
+input[type="checkbox"] {
+    width: 15px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    align-items: center; /* Vertically center the checkbox */
+    justify-content: center; /* Horizontally center the checkbox */
+}
+
+.modCell {
+    width: 30px;
+}

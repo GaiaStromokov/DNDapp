@@ -1,0 +1,12 @@
+
+.CharacterInfoBox {
+    position: absolute; /* Make the container absolutely positioned */
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    width: 200px; /* Set the width as needed */
+    height: auto; /* Set the height as needed */
+    background-color: #f4e1c1; /* Background color for the container */
+    padding: 8px; /* Padding inside the container */
+    border: 1px solid #3a2a1b; /* Border for the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

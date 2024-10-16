@@ -1,0 +1,12 @@
+.SavingThrowsBox {
+    position: absolute;
+    top: 290px;
+    left: 220px;
+    width: 171px;
+    height: auto;
+    background-color: #f4e1c1;
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,62 @@
+.ProficienciesBox {
+    position: absolute;
+    top: 440px;
+    left: 10px;
+    width: 380px;
+    background-color: #f4e1c1;
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    box-sizing: border-box;
+}
+
+.bfw {
+    width: 100%;
+}
+
+.bfw:hover {
+    background-color: #d3b08a; /* Adjust this color as needed */
+}
+
+.popup {
+    position: fixed; /* Position relative to the viewport */
+    top: 50%; /* Position at 20% from the top */
+    left: 35%; /* Position at 30% from the left */
+    transform: translate(-50%, -50%); /* Center the popup */
+    display: flex; /* Display items using flexbox */
+    flex-direction: column; /* Display items vertically */
+    background-color:  #e0c9a9;
+    border: 1px solid #0000ff; /* Bright blue for high contrast */
+    padding: 8px; /* Add some padding for better appearance */
+    z-index: 1000;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.popup .bfw {
+    margin: 5px 0; /* Adjust margins for vertical layout */
+    white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+.selected {
+    background-color: #a58d6f; /* Darken color for selected items */
+}
+
+.scrollable-cell {
+    max-width: 100px; /* Set a fixed width for the cell */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollable-cell::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-cell {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.scrollable-cell {
+    -ms-overflow-style: none; /* IE and Edge */
+}

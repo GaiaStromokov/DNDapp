@@ -1,0 +1,35 @@
+.AbilitiesBox {
+    position: absolute;
+    top: 10px;
+    left: 1020px;
+    width: auto; /* Adjusted width to accommodate table */
+    height: auto; /* Adjust height to fit content */
+    background-color: #f4e1c1;
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    box-sizing: border-box;
+}
+
+.abilitiesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px; /* Add some space between tables */
+}
+
+.abilitiesTable th, .abilitiesTable td {
+    border: 1px solid #3a2a1b;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.abilitiesTable th {
+    text-align: center; /* Center the row headers */
+    font-size: 1.2em; /* Make the text larger */
+    padding: 5px; /* Adjust padding to decrease height */
+    height: auto; /* Remove fixed height */
+}
+
+.largeCell {
+    background-color: #e0c9a9;
+}

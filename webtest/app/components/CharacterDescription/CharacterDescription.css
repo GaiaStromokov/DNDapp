@@ -1,0 +1,104 @@
+.cd-CharacterDescriptionBox {
+    position: absolute;
+    top: 620px;
+    left: 10px;
+    width: 381px; /* Adjust width to fit better */
+    height: 220px; /* Allow the height to adjust based on content */
+    background-color: #f4e1c1;
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure content does not overflow the box */
+}
+
+.cd-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.cd-header button {
+    padding: 5px 10px;
+    background-color: #3a2a1b; /* Match the color scheme */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cd-header button:hover {
+    background-color: #2e2115; /* Darker shade to match the color scheme */
+}
+
+.cd-content {
+    height: calc(100% - 40px); /* Adjust height to fit within the box */
+    padding: 10px;
+    background-color: #f9f0dc; /* Match the color scheme */
+    border: 1px solid #3a2a1b; /* Match the color scheme */
+    overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+.cd-input-row {
+    display: flex; /* Aligns label and input in a row */
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.cd-input-row label {
+    margin-right: 10px; /* Space between label and input */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.cd-input-row input {
+    margin-left: 5px; /* Space between label and input */
+    padding: 4px; /* Slightly reduce padding */
+    border: 1px solid #3a2a1b; /* Match the color scheme */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 0.9em; /* Slightly reduce font size for better fit */
+    background-color: #f9f0dc; /* Match the color scheme */
+    color: #3a2a1b; /* Match the color scheme */
+}
+
+.cd-weight-row {
+    display: flex; /* Aligns the weight label and input in a row */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Centers items vertically */
+}
+
+.cd-backstory-box {
+    width: 100%;
+    background-color: #f4e1c1;
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    margin-bottom: 10px;
+    position: relative; /* Ensure the text area is positioned relative to this box */
+}
+
+.cd-backstory-textarea {
+    width: 100%;
+    height: 80px; /* Set fixed height */
+    padding: 8px;
+    border: 1px solid #3a2a1b;
+    border-radius: 3px;
+    resize: none; /* Make the text box static */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #f9f0dc;
+    color: #3a2a1b;
+    box-sizing: border-box; /* Ensure padding and border are included in the height */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.cd-backstory-textarea::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just to ensure the background is transparent */
+}
+
+/* Hide scrollbar for Firefox */
+.cd-backstory-textarea {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.cd-backstory-textarea {
+    -ms-overflow-style: none; /* IE and Edge */
+}

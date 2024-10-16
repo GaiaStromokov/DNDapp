@@ -1,0 +1,183 @@
+/* Container for the entire BackPack component */
+.BackPackBox {
+    position: absolute; /* Positioning the box absolutely */
+    top: 220px; /* Distance from the top of the parent container */
+    left: 580px; /* Distance from the left of the parent container */
+    width: 430px; /* Width of the box */
+    height: auto; /* Height adjusts based on content */
+    background-color: #f4e1c1; /* Background color of the box */
+    padding: 8px; /* Padding inside the box */
+    border: 1px solid #3a2a1b; /* Border around the box */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Header containing the tab buttons */
+.header {
+    display: flex; /* Flexbox layout for the header */
+    justify-content: space-around; /* Space out the buttons evenly */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+/* Styling for the tab buttons */
+.header button {
+    padding: 5px 10px; /* Padding inside the buttons */
+    background-color: #3a2a1b; /* Background color of the buttons */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for the tab buttons */
+.header button:hover {
+    background-color: #2e2115; /* Darker background color on hover */
+}
+
+/* Content area for the active tab */
+.content {
+    padding: 10px; /* Padding inside the content area */
+    background-color: #f9f0dc; /* Background color of the content area */
+    border: 1px solid #3a2a1b; /* Border around the content area */
+    height: calc(100% - 50px); /* Adjust height to fit within the container */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+/* Container for the spell content */
+.spell-content {
+    display: flex; /* Use flexbox layout for horizontal alignment */
+    height: 408px; /* Set a fixed height for the spell content area */
+}
+
+/* Left side of the spell content for spell slots */
+.spell-left {
+    flex: 0 0 150px; /* Fixed width for the spell slots table */
+    padding: 5px; /* Padding inside the left side */
+}
+
+/* Right side of the spell content for spells */
+.spell-right {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding inside the right side */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+/* Table for the spell slots */
+.spell-slots-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 10px; /* Space below the table */
+}
+
+/* Table cells for the spell slots */
+.spell-slots-table td {
+    padding: 2px; /* Reduce padding to decrease height */
+    border: 1px solid #3a2a1b; /* Border around the table cells */
+}
+
+/* Increment button for the spell slots */
+.increment-button {
+    background-color: #3a2a1b; /* Background color of the button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 2px 5px; /* Reduce padding to decrease size */
+    font-size: 0.8em; /* Reduce font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Input fields for spell details inside the table */
+.spell-input {
+    width: 100%; /* Full width of the table cell */
+    padding: 2px; /* Padding inside the inputs */
+    border: 1px solid #3a2a1b; /* Border around the inputs */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 0.8em; /* Font size */
+    background-color: #f9f0dc; /* Background color of the inputs */
+    color: #3a2a1b; /* Text color */
+}
+
+/* Styling for the spell list */
+.spell-list {
+    max-height: 100%; /* Ensure it can take full height */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+/* Styling for the spell list headers */
+.spell-list h4 {
+    margin: 0 0 10px; /* Space below the title */
+}
+
+/* Remove default list styles */
+.spell-list ul {
+    list-style: none; /* No default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Styling for individual spell list items */
+.spell-list li {
+    padding: 5px; /* Space around each list item */
+    background-color: #f9f0dc; /* Background color for items */
+    border: 1px solid #3a2a1b; /* Border for items */
+    margin-bottom: 5px; /* Space below each item */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Ensure tables fill horizontally */
+.spell-list-table,
+.spell-slots-table {
+    width: 100%; /* Full width */
+}
+
+/* Additional styling for spell lists */
+.spell-list-table th,
+.spell-list-table td {
+    padding: 5px; /* Padding for table cells */
+}
+
+/* Table for the coin purse inputs */
+.coin-purse-table {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Space below the table */
+}
+
+/* Table cells for the coin purse inputs */
+.coin-purse-table td {
+    padding: 5px; /* Padding inside the table cells */
+    vertical-align: top; /* Align inputs to the top */
+}
+
+/* Labels for the coin purse inputs */
+.coin-purse-table label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Inputs for the coin purse */
+.coin-purse-table input {
+    width: 100%; /* Full width of the table cell */
+    padding: 4px; /* Padding inside the inputs */
+    border: 1px solid #3a2a1b; /* Border around the inputs */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 0.9em; /* Font size */
+    background-color: #f9f0dc; /* Background color of the inputs */
+    color: #3a2a1b; /* Text color */
+}
+
+/* Textarea for the inventory */
+.inventory-textarea {
+    width: 100%; /* Full width of the container */
+    height: 324px; /* Fixed height */
+    padding: 10px; /* Padding inside the textarea */
+    border: 1px solid #3a2a1b; /* Border around the textarea */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 0.9em; /* Font size */
+    background-color: #f9f0dc; /* Background color of the textarea */
+    color: #3a2a1b; /* Text color */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+/* Ensure spell names have some margin */
+.spell-names input {
+    margin-bottom: 5px; /* Space between spell name inputs */
+}
